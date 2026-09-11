@@ -53,6 +53,15 @@ export default function Home({ onBook, onSelectService }: { onBook: () => void; 
             <button onClick={onBook} className="btn-primary" style={{ background: "#B08D4F" }}>
               Book a visit
             </button>
+            <a
+              href="https://wa.me/918757728679?text=Hi%20Sereniva%20Spa%2C%20I%20want%20to%20book%20an%20appointment."
+              target="_blank"
+              rel="noreferrer"
+              className="btn-outline"
+              style={{ borderColor: "rgba(255,255,255,.5)", color: "#fff" }}
+            >
+              WhatsApp us
+            </a>
             <Link to="/services" className="btn-outline" style={{ borderColor: "rgba(255,255,255,.5)", color: "#fff" }}>
               See services
             </Link>

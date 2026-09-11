@@ -148,15 +148,25 @@ export default function Booking({ route }: { route: string }) {
             </div>
           )}
 
-          <div className="mt-6 flex gap-3">
-            {step > 1 && (
-              <button onClick={back} className="btn-outline flex-1">
-                Back
+          <div className="mt-6 flex flex-col gap-3">
+            <div className="flex gap-3">
+              {step > 1 && (
+                <button onClick={back} className="btn-outline flex-1">
+                  Back
+                </button>
+              )}
+              <button onClick={next} className="btn-primary flex-1">
+                {step === 4 ? "Confirm booking" : "Continue"}
               </button>
-            )}
-            <button onClick={next} className="btn-primary flex-1">
-              {step === 4 ? "Confirm booking" : "Continue"}
-            </button>
+            </div>
+            <a
+              href="https://wa.me/918757728679?text=Hi%20Sereniva%20Spa%2C%20I%20want%20to%20book%20an%20appointment."
+              target="_blank"
+              rel="noreferrer"
+              className="btn-outline w-full text-center"
+            >
+              Book via WhatsApp
+            </a>
           </div>
         </div>
       </section>

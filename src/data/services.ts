@@ -1,4 +1,4 @@
-export type Category = "Massage" | "Facials" | "Body Wellness" | "Signature Experiences";
+export type Category = "Massage" | "Facials" | "Body Wellness" | "Hair Care" | "Signature Experiences";
 
 export interface Service {
   id: string;
@@ -16,6 +16,7 @@ export const CATEGORIES: (Category | "All")[] = [
   "Massage",
   "Facials",
   "Body Wellness",
+  "Hair Care",
   "Signature Experiences",
 ];
 
@@ -85,6 +86,17 @@ export const SERVICES: Service[] = [
     description:
       "Targeted pressure-point work across the feet and scalp, aimed squarely at better sleep and mental fatigue — a favourite for a quick reset mid-week.",
     image: "https://images.unsplash.com/photo-1519415510236-718bdfcd89c1?w=1200&q=80",
+  },
+  {
+    id: "unisex-haircut",
+    name: "Unisex Haircut & Styling",
+    category: "Hair Care",
+    duration: 45,
+    price: 1200,
+    short: "Precision cutting and finish styling for men and women alike.",
+    description:
+      "A tailored unisex haircut with consultation, precision trimming, wash and finish styling to leave you polished and refreshed for everyday confidence.",
+    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1200&q=80",
   },
 ];
 
